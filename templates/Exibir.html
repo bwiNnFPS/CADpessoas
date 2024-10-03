@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/estilo.css">
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+
+    <h1>{{ Titulo }}</h1>
+     {% for pokemon in lista %}
+        <div class="card">
+            <img src="">
+            <p>Genero: {{ pokemon[1] }}</p>
+            <p>Altura: {{ pokemon[2] }}</p>
+            <p>Peso: {{ pokemon[3] }}</p>
+        </div>
+     {% endfor %}
+    <div>
+    <a href="/">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>
